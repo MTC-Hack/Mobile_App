@@ -182,7 +182,6 @@
         <!--Поломки-->
         <scene sceneID="h8b-gZ-nip">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nh5-tK-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rqC-in-7md" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Поломки" id="u71-hq-AZH"/>
                     <toolbarItems/>
@@ -196,6 +195,7 @@
                         <segue destination="Y4J-zi-rDm" kind="relationship" relationship="rootViewController" id="bdD-Qf-pvz"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nh5-tK-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2334" y="-251"/>
         </scene>
@@ -255,27 +255,28 @@
         <!--Информация об авто-->
         <scene sceneID="yq3-wH-Hyc">
             <objects>
-                <viewController id="b8l-7Y-oTH" sceneMemberID="viewController">
+                <viewController id="b8l-7Y-oTH" customClass="InfoViewController" customModule="MTC_Rat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Dz-9f-ZkP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car_photo" translatesAutoresizingMaskIntoConstraints="NO" id="mox-Mf-eld">
-                                <rect key="frame" x="67" y="74" width="240" height="198"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XTA210930Y2696785" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-Sl-Nmg">
-                                <rect key="frame" x="67" y="27" width="240" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XTA210930Y2696785" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-Sl-Nmg">
+                                <rect key="frame" x="67" y="20" width="240" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRi-id-QmZ">
-                                <rect key="frame" x="67" y="272" width="240" height="54"/>
+                                <rect key="frame" x="67" y="276" width="240" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I75-56-eX1">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RU" translatesAutoresizingMaskIntoConstraints="NO" id="I75-56-eX1">
                                         <rect key="frame" x="205" y="34" width="27" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -308,17 +309,24 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiguan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19H-4r-QRS">
-                                <rect key="frame" x="67" y="447" width="123" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wolkswagen Tiguan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19H-4r-QRS">
+                                <rect key="frame" x="122" y="353" width="219" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq9-lB-8Hx">
-                                <rect key="frame" x="227" y="447" width="80" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Мощность: 170 л.с." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juc-nK-sbx">
+                                <rect key="frame" x="122" y="385" width="219" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Год выпуска: 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq9-lB-8Hx">
+                                <rect key="frame" x="122" y="417" width="219" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -331,19 +339,86 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wolks" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJT-XY-bqh">
-                                <rect key="frame" x="138" y="341" width="98" height="98"/>
+                                <rect key="frame" x="16" y="358" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92766497461928932" green="0.92766497461928932" blue="0.92766497461928932" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="v63-KL-rdI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Vv2-EL-ywq"/>
-                    <navigationItem key="navigationItem" title="Информация об авто" id="9BS-hb-ta8"/>
+                    <tabBarItem key="tabBarItem" id="Vv2-EL-ywq"/>
+                    <navigationItem key="navigationItem" title="Информация об авто" id="9BS-hb-ta8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="71O-WB-ilq">
+                            <connections>
+                                <segue destination="d5y-gL-sRN" kind="show" id="dwR-IJ-iDg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="numberView" destination="XRi-id-QmZ" id="D4T-M7-vxo"/>
+                        <outlet property="vinLabel" destination="MhX-Sl-Nmg" id="aq4-9l-5I9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXx-ZD-rSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3224.8000000000002" y="-1039.4302848575712"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="PWj-6D-HHk">
+            <objects>
+                <viewController id="d5y-gL-sRN" customClass="ProfileViewController" customModule="MTC_Rat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYG-ke-lEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder-user" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-S7-aIo">
+                                <rect key="frame" x="101" y="20" width="172" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+7 (926) 870-23-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-YV-9ME">
+                                <rect key="frame" x="106" y="264" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dqy-NX-ACJ">
+                                <rect key="frame" x="0.0" y="293" width="375" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ivan.ivanov@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAf-9s-s6q">
+                                <rect key="frame" x="101" y="235" width="178" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Иван Иванов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa5-2H-phI">
+                                <rect key="frame" x="113" y="200" width="149" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="G0z-uv-vu4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Профиль" id="3QB-GU-BLK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="T61-he-EID"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailLabel" destination="RAf-9s-s6q" id="E8Y-fo-X1b"/>
+                        <outlet property="nameLabel" destination="fa5-2H-phI" id="gZO-Ei-KiK"/>
+                        <outlet property="phoneLabel" destination="dGQ-YV-9ME" id="RMR-58-m9M"/>
+                        <outlet property="profileImage" destination="VTQ-S7-aIo" id="zu2-gB-UrB"/>
+                        <outlet property="tableView" destination="Dqy-NX-ACJ" id="wlG-7p-tZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rki-92-n6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4156" y="-1039.4302848575712"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EjV-c8-zfd">
@@ -362,7 +437,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="RU" width="21" height="15"/>
         <image name="car_photo" width="450" height="349"/>
+        <image name="placeholder-user" width="300" height="300"/>
         <image name="wolks" width="256" height="256"/>
     </resources>
 </document>

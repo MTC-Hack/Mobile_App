@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3EDAEA1F7D858D006CEAEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3EDAE91F7D858D006CEAEE /* ProfileViewController.swift */; };
 		CA6CF5591F7D50D700FF8EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6CF5581F7D50D700FF8EE7 /* Assets.xcassets */; };
+		CA6CF55B1F7D6F0500FF8EE7 /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6CF55A1F7D6F0400FF8EE7 /* FlagKit.xcassets */; };
+		CA6CF55D1F7D6FE300FF8EE7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF55C1F7D6FE300FF8EE7 /* InfoViewController.swift */; };
+		CA6CF5601F7D798500FF8EE7 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF55E1F7D798500FF8EE7 /* VehicleCell.swift */; };
+		CA6CF5611F7D798500FF8EE7 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6CF55F1F7D798500FF8EE7 /* VehicleCell.xib */; };
 		CAA902D31F7D165B00A7C14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA902D21F7D165B00A7C14B /* AppDelegate.swift */; };
 		CAA902D51F7D165B00A7C14B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA902D41F7D165B00A7C14B /* LoginViewController.swift */; };
 		CAA902D81F7D165B00A7C14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA902D61F7D165B00A7C14B /* Main.storyboard */; };
@@ -15,7 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA3EDAE91F7D858D006CEAEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CA6CF5581F7D50D700FF8EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA6CF55A1F7D6F0400FF8EE7 /* FlagKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlagKit.xcassets; sourceTree = "<group>"; };
+		CA6CF55C1F7D6FE300FF8EE7 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		CA6CF55E1F7D798500FF8EE7 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		CA6CF55F1F7D798500FF8EE7 /* VehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
 		CAA902CF1F7D165B00A7C14B /* MTC-Rat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTC-Rat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA902D21F7D165B00A7C14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA902D41F7D165B00A7C14B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +64,17 @@
 		CAA902D11F7D165B00A7C14B /* MTC-Rat */ = {
 			isa = PBXGroup;
 			children = (
+				CA6CF55A1F7D6F0400FF8EE7 /* FlagKit.xcassets */,
 				CA6CF5581F7D50D700FF8EE7 /* Assets.xcassets */,
 				CAA902D21F7D165B00A7C14B /* AppDelegate.swift */,
 				CAA902D41F7D165B00A7C14B /* LoginViewController.swift */,
 				CAA902D61F7D165B00A7C14B /* Main.storyboard */,
 				CAA902DB1F7D165B00A7C14B /* LaunchScreen.storyboard */,
 				CAA902DE1F7D165B00A7C14B /* Info.plist */,
+				CA6CF55C1F7D6FE300FF8EE7 /* InfoViewController.swift */,
+				CA6CF55E1F7D798500FF8EE7 /* VehicleCell.swift */,
+				CA6CF55F1F7D798500FF8EE7 /* VehicleCell.xib */,
+				CA3EDAE91F7D858D006CEAEE /* ProfileViewController.swift */,
 			);
 			path = "MTC-Rat";
 			sourceTree = "<group>";
@@ -124,7 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA902DD1F7D165B00A7C14B /* LaunchScreen.storyboard in Resources */,
+				CA6CF5611F7D798500FF8EE7 /* VehicleCell.xib in Resources */,
 				CA6CF5591F7D50D700FF8EE7 /* Assets.xcassets in Resources */,
+				CA6CF55B1F7D6F0500FF8EE7 /* FlagKit.xcassets in Resources */,
 				CAA902D81F7D165B00A7C14B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6CF5601F7D798500FF8EE7 /* VehicleCell.swift in Sources */,
 				CAA902D51F7D165B00A7C14B /* LoginViewController.swift in Sources */,
+				CA3EDAEA1F7D858D006CEAEE /* ProfileViewController.swift in Sources */,
+				CA6CF55D1F7D6FE300FF8EE7 /* InfoViewController.swift in Sources */,
 				CAA902D31F7D165B00A7C14B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
