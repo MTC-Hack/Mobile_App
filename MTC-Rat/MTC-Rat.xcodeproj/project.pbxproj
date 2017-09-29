@@ -12,6 +12,7 @@
 		CA6CE2721F7DA68800E09B7B /* CrashesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CE2711F7DA68800E09B7B /* CrashesViewController.swift */; };
 		CA6CE2741F7DA71000E09B7B /* DescriptionCrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CE2731F7DA71000E09B7B /* DescriptionCrashViewController.swift */; };
 		CA6CE2761F7DA76B00E09B7B /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CE2751F7DA76B00E09B7B /* OffersViewController.swift */; };
+		CA6CE2781F7DA7A700E09B7B /* AnalyticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CE2771F7DA7A700E09B7B /* AnalyticViewController.swift */; };
 		CA6CF5591F7D50D700FF8EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6CF5581F7D50D700FF8EE7 /* Assets.xcassets */; };
 		CA6CF55B1F7D6F0500FF8EE7 /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6CF55A1F7D6F0400FF8EE7 /* FlagKit.xcassets */; };
 		CA6CF55D1F7D6FE300FF8EE7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF55C1F7D6FE300FF8EE7 /* InfoViewController.swift */; };
@@ -28,6 +29,7 @@
 		CA6CE2711F7DA68800E09B7B /* CrashesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashesViewController.swift; sourceTree = "<group>"; };
 		CA6CE2731F7DA71000E09B7B /* DescriptionCrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCrashViewController.swift; sourceTree = "<group>"; };
 		CA6CE2751F7DA76B00E09B7B /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		CA6CE2771F7DA7A700E09B7B /* AnalyticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticViewController.swift; sourceTree = "<group>"; };
 		CA6CF5581F7D50D700FF8EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6CF55A1F7D6F0400FF8EE7 /* FlagKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlagKit.xcassets; sourceTree = "<group>"; };
 		CA6CF55C1F7D6FE300FF8EE7 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				CA6CE2711F7DA68800E09B7B /* CrashesViewController.swift */,
 				CA6CE2731F7DA71000E09B7B /* DescriptionCrashViewController.swift */,
 				CA6CE2751F7DA76B00E09B7B /* OffersViewController.swift */,
+				CA6CE2771F7DA7A700E09B7B /* AnalyticViewController.swift */,
 			);
 			path = "MTC-Rat";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				CA6CE2761F7DA76B00E09B7B /* OffersViewController.swift in Sources */,
 				CA6CE2721F7DA68800E09B7B /* CrashesViewController.swift in Sources */,
 				CA6CE2701F7DA11400E09B7B /* CrashCell.swift in Sources */,
+				CA6CE2781F7DA7A700E09B7B /* AnalyticViewController.swift in Sources */,
 				CA6CF55D1F7D6FE300FF8EE7 /* InfoViewController.swift in Sources */,
 				CAA902D31F7D165B00A7C14B /* AppDelegate.swift in Sources */,
 			);

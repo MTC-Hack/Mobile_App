@@ -1,5 +1,5 @@
 //
-//  OffersViewController.swift
+//  AnalyticViewController.swift
 //  MTC-Rat
 //
 //  Created by Кирилл Володин on 29.09.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OffersViewController: UIViewController {
+class AnalyticViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
