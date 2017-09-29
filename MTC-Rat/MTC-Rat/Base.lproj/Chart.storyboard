@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dHa-dV-R5e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chart View Controller-->
+        <scene sceneID="0Vr-Kg-LNN">
+            <objects>
+                <viewController storyboardIdentifier="Chart" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dHa-dV-R5e" customClass="ChartViewController" customModule="MTC_Rat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBF-K5-hr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PH0-Tl-AGu" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="24" y="58" width="139" height="139"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="az5-ZT-Dkj"/>
+                                    <constraint firstAttribute="width" constant="139" id="xkT-7V-daj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prd-oK-6ee" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="212" y="58" width="139" height="139"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="9ci-RI-Yij"/>
+                                    <constraint firstAttribute="width" constant="139" id="EZs-fz-6i1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-xd-nNg" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="24" y="266.5" width="139" height="139"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="a1h-gl-kQw"/>
+                                    <constraint firstAttribute="width" constant="139" id="yeF-aZ-JXo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showUnitString" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHm-NY-MTR">
+                                <rect key="frame" x="212" y="267" width="139" height="139"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L1-I6-PPD">
+                                        <rect key="frame" x="33.5" y="-1.5" width="72" height="142.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="119"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="1l8-nx-uC8"/>
+                                    <constraint firstAttribute="height" constant="139" id="KJe-sw-Mif"/>
+                                    <constraint firstItem="7L1-I6-PPD" firstAttribute="centerY" secondItem="nHm-NY-MTR" secondAttribute="centerY" id="gMT-dC-Tia"/>
+                                    <constraint firstItem="7L1-I6-PPD" firstAttribute="centerX" secondItem="nHm-NY-MTR" secondAttribute="centerX" id="tEW-Ae-qlY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Агресивность вождения" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IG-Lj-mlW">
+                                <rect key="frame" x="24" y="205" width="139" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="6Hz-oU-Nwa"/>
+                                    <constraint firstAttribute="height" constant="32" id="OTD-Vl-cQq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Экономичность вождения" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHb-8y-mHR">
+                                <rect key="frame" x="212" y="205" width="139" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KaU-JC-lzS"/>
+                                    <constraint firstAttribute="width" constant="139" id="uN2-fm-E22"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень топлива" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O08-HL-XKB">
+                                <rect key="frame" x="24" y="413.5" width="139" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="Jh7-d7-LWs"/>
+                                    <constraint firstAttribute="height" constant="32" id="O7h-xZ-1QE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Штрафы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcY-i3-bbj">
+                                <rect key="frame" x="212" y="414" width="139" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="7zt-tl-cvD"/>
+                                    <constraint firstAttribute="height" constant="32" id="QN6-sp-WGo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amr-eQ-G8O" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="24" y="475.5" width="327" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Ylc-q1-Kgs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="График расхода топлива" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efB-fY-ntN">
+                                <rect key="frame" x="24" y="633.5" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jHb-8y-mHR" firstAttribute="top" secondItem="prd-oK-6ee" secondAttribute="bottom" constant="8" id="201-gJ-0Sy"/>
+                            <constraint firstItem="7Vi-cC-GE6" firstAttribute="trailing" secondItem="amr-eQ-G8O" secondAttribute="trailing" constant="24" id="47P-ne-v8t"/>
+                            <constraint firstItem="amr-eQ-G8O" firstAttribute="top" secondItem="O08-HL-XKB" secondAttribute="bottom" constant="30" id="87d-Vd-KfI"/>
+                            <constraint firstItem="prd-oK-6ee" firstAttribute="top" secondItem="7Vi-cC-GE6" secondAttribute="top" constant="38" id="95Z-cl-3N5"/>
+                            <constraint firstItem="O08-HL-XKB" firstAttribute="top" secondItem="fhr-xd-nNg" secondAttribute="bottom" constant="8" id="G6J-5t-YMX"/>
+                            <constraint firstItem="amr-eQ-G8O" firstAttribute="leading" secondItem="7Vi-cC-GE6" secondAttribute="leading" constant="24" id="GHp-x4-DB1"/>
+                            <constraint firstItem="fhr-xd-nNg" firstAttribute="top" secondItem="0IG-Lj-mlW" secondAttribute="bottom" constant="30" id="Lwg-cv-PkX"/>
+                            <constraint firstItem="efB-fY-ntN" firstAttribute="leading" secondItem="7Vi-cC-GE6" secondAttribute="leading" constant="24" id="N1I-jN-iH7"/>
+                            <constraint firstItem="efB-fY-ntN" firstAttribute="top" secondItem="amr-eQ-G8O" secondAttribute="bottom" constant="8" id="Rtt-3v-VHq"/>
+                            <constraint firstItem="0IG-Lj-mlW" firstAttribute="top" secondItem="PH0-Tl-AGu" secondAttribute="bottom" constant="8" id="Sos-Cu-uCb"/>
+                            <constraint firstItem="7Vi-cC-GE6" firstAttribute="trailing" secondItem="nHm-NY-MTR" secondAttribute="trailing" constant="24" id="Tgo-Vb-EDV"/>
+                            <constraint firstItem="nHm-NY-MTR" firstAttribute="top" secondItem="jHb-8y-mHR" secondAttribute="bottom" constant="30" id="UlX-ip-TKX"/>
+                            <constraint firstItem="0IG-Lj-mlW" firstAttribute="leading" secondItem="7Vi-cC-GE6" secondAttribute="leading" constant="24" id="Wfh-W0-Zd7"/>
+                            <constraint firstItem="OcY-i3-bbj" firstAttribute="top" secondItem="nHm-NY-MTR" secondAttribute="bottom" constant="8" id="Yah-V1-uxb"/>
+                            <constraint firstItem="7Vi-cC-GE6" firstAttribute="trailing" secondItem="efB-fY-ntN" secondAttribute="trailing" constant="24" id="bBC-aV-xGN"/>
+                            <constraint firstItem="7Vi-cC-GE6" firstAttribute="trailing" secondItem="jHb-8y-mHR" secondAttribute="trailing" constant="24" id="hQH-tL-dDs"/>
+                            <constraint firstItem="7Vi-cC-GE6" firstAttribute="trailing" secondItem="prd-oK-6ee" secondAttribute="trailing" constant="24" id="kHn-xn-GMo"/>
+                            <constraint firstItem="PH0-Tl-AGu" firstAttribute="leading" secondItem="7Vi-cC-GE6" secondAttribute="leading" constant="24" id="mEd-lr-HGo"/>
+                            <constraint firstItem="fhr-xd-nNg" firstAttribute="leading" secondItem="7Vi-cC-GE6" secondAttribute="leading" constant="24" id="mPf-QT-T00"/>
+                            <constraint firstItem="O08-HL-XKB" firstAttribute="leading" secondItem="7Vi-cC-GE6" secondAttribute="leading" constant="24" id="oko-6f-VIC"/>
+                            <constraint firstItem="PH0-Tl-AGu" firstAttribute="top" secondItem="7Vi-cC-GE6" secondAttribute="top" constant="38" id="pDx-9q-ZxU"/>
+                            <constraint firstItem="7Vi-cC-GE6" firstAttribute="trailing" secondItem="OcY-i3-bbj" secondAttribute="trailing" constant="24" id="z9n-Oy-xlY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Vi-cC-GE6"/>
+                    </view>
+                    <connections>
+                        <outlet property="agression" destination="PH0-Tl-AGu" id="kKk-cM-DnK"/>
+                        <outlet property="chart" destination="amr-eQ-G8O" id="hCO-0R-N8y"/>
+                        <outlet property="economy" destination="prd-oK-6ee" id="yL2-d2-bUP"/>
+                        <outlet property="fines" destination="nHm-NY-MTR" id="pSR-JR-uCL"/>
+                        <outlet property="fuel" destination="fhr-xd-nNg" id="Nhj-za-W2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLA-VE-YSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="952.17391304347836"/>
+        </scene>
+    </scenes>
+</document>

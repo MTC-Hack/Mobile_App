@@ -1,0 +1,18 @@
+PODS:
+  - Instructions (1.0.0)
+  - MBCircularProgressBar (0.3.5)
+  - SwiftChart (0.5.0)
+
+DEPENDENCIES:
+  - Instructions (~> 1.0.0)
+  - MBCircularProgressBar
+  - SwiftChart
+
+SPEC CHECKSUMS:
+  Instructions: 11b6744e572b8cab6f61e9445403cb95fcde68f1
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  SwiftChart: d1d22d2b1c4582f4d561edf97a210059c00ee256
+
+PODFILE CHECKSUM: d14100e529bf6e4fd0830c70fb97e91617e09254
+
+COCOAPODS: 1.3.0.beta.1
