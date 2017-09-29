@@ -116,47 +116,46 @@
             </objects>
             <point key="canvasLocation" x="2334" y="485"/>
         </scene>
-        <!--Предложения-->
+        <!--Предложения от автосервисов-->
         <scene sceneID="Y5R-nc-O5M">
             <objects>
-                <viewController id="X21-gq-KGd" sceneMemberID="viewController">
+                <viewController id="X21-gq-KGd" customClass="OffersViewController" customModule="MTC_Rat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xr5-Vj-xA3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8y-RT-LLE">
-                                <rect key="frame" x="172" y="298" width="30" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gfF-Sj-Aeu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Чат"/>
-                                <connections>
-                                    <segue destination="gEr-Sz-Ya6" kind="show" id="LEs-wp-nO7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-7m-Zt4">
-                                <rect key="frame" x="129" y="369" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Инфа о сервисе"/>
-                                <connections>
-                                    <segue destination="6yA-QB-kLq" kind="show" id="ByZ-SW-HrE"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="avG-LV-0bg">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="avG-LV-0bg" id="33l-4F-NeN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="BoF-Hn-t1s"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="K2i-FV-QDa"/>
-                    <navigationItem key="navigationItem" title="Предложения" id="Kr6-7R-eee"/>
+                    <navigationItem key="navigationItem" title="Предложения от автосервисов" id="Kr6-7R-eee"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ni-60-TPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3225" y="486"/>
+            <point key="canvasLocation" x="3224.8000000000002" y="485.30734632683664"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ptn-kL-e5f">
             <objects>
                 <viewController id="gEr-Sz-Ya6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1V-Q3-orv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="eYe-Gv-7eF"/>
@@ -654,7 +653,7 @@
             <objects>
                 <viewController id="6yA-QB-kLq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mew-C3-VTH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Mev-Fd-ORi"/>
@@ -673,7 +672,4 @@
         <image name="shest" width="800" height="800"/>
         <image name="wolks" width="256" height="256"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ByZ-SW-HrE"/>
-    </inferredMetricsTieBreakers>
 </document>
